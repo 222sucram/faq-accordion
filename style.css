@@ -1,48 +1,85 @@
-body {
-    height: 100vh;
-    background-image: linear-gradient(135deg, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
-    display: flex;
-    justify-content: center;
-    align-items: center;
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh', sans-serif;
     font-size: 12px;
-    font-family: 'Kumbh', sans-serif
+    color: var(--vd-gray-blue);
 }
 
-
 :root {
-    --vd-saturated-blue: hsl(238, 29%, 16%);
+    --vd-saturate-blue: hsl(238, 29%, 16%);
     --soft-red: hsl(14, 88%, 65%);
     --vd-gray-blue: hsl(237, 12%, 33%);
     --d-gray-blue: hsl(240, 6%, 50%);
     --l-gray-blue: hsl(240, 5%, 91%);
 }
 
-.main-card {
-    min-width: 350px;
-    max-width: 65vw;
-    height: 75vh;
-    background-color: white;
-    background-image: url(images/bg-pattern-mobile.svg);
+body {
+    height: 100vh;
+    width: 100vw;;
+    background-image: linear-gradient(-135deg, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
     background-size: cover;
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+}
+
+
+.card-container {
+    min-width: 350px;
+    height: 75vh;
+    width: 50vw;
+    background-color: white;
+   padding-bottom: 15px;
+    margin-top: 65px;
     border-radius: 25px;
+    background-image: url(images/bg-pattern-mobile.svg);
+    background-size: 250px, contain;
+    background-repeat: no-repeat;  
+    background-position: 50% 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    gap: 15px;
+}
+
+.img-header {
+    position: absolute;
+    top: -150px;
+    transform: scale(0.65);
+}
+
+
+.header {
+    margin-top: 125px;
 }
 
 h1 {
-    width: 375px;
+    font-size: 28px;
+    color: var(--vd-saturate-blue);
 }
 
-.main-card div {
-    text-align: center;
+.question-container{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-bottom: 2px solid var(--l-gray-blue);
 }
 
-.main-card div h1 {
-    text-align: center;
+.answer {
+    margin-top: 5px;
 }
 
 .hidden {
     display: none;
+}
+
+.selected {
+    font-weight: 700;
+    color: var(--vd-saturate-blue);
 }
