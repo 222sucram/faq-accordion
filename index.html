@@ -19,53 +19,56 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="card-container">
-    <img class="img-header" src="images/illustration-woman-online-mobile.svg" alt="">
-    <!-- <img class="img-shadow" src="images/bg-pattern-mobile.svg" alt=""> -->
-    <div class="header">
-      <h1>
-        FAQ
-      </h1>
-    </div>
-
-    <div class="question-container">
-      <p class="question-text">
-        How many team members can I invite?
-      </p>
-      <span class="arrow"><img src="images/icon-arrow-down.svg" alt=""></span>
-      <p class="answer hidden">You can invite up to 2 additional users on the Free plan. There is no limit on 
-        team members for the Premium plan.</p>
-    </div>
-    <div class="question-container">
-      <p class="question-text">
-        What is the maximum file upload size?
-      </p>
-      <span class="arrow"><img src="images/icon-arrow-down.svg" alt=""></span>
-      <p class="answer hidden">No more than 2GB. All files in your account must fit your allotted storage space.</p>
-    </div>
-     <div class="question-container">
-      <p class="question-text">
-        How do I reset my password?
-      </p>
-      <span class="arrow"><img src="images/icon-arrow-down.svg" alt=""></span>
-      <p class="answer hidden">  Click “Forgot password” from the login page or “Change password” from your profile page.
-        A reset link will be emailed to you.</p>
-    </div>
-     <div class="question-container">
-      <p class="question-text selected">
-        Can I cancel my subscription?
-      </p>
-      <span class="arrow"><img src="images/icon-arrow-down.svg" alt=""></span>
-      <p class="answer"> Yes! Send us a message and we’ll process your request no questions asked.</p>
-    </div>
-     <div class="question-container">
-      <p class="question-text">
-        Do you provide additional support?
-      </p>
-      <span class="arrow"><img src="images/icon-arrow-down.svg" alt=""></span>
-      <p class="answer hidden">Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
-    </div>
-  </div>
+<!-- Issue with image resizing when viewport changes size. Refactor to separate and contain the img and questions in separate divs
+use position sticky on the image and change position with media queries depending on viewport size -->
   <script src="script.js"></script>
 </body>
 </html>
+
+
+<!-- 
+<div class="card-container">
+  <img class="img-header" src="images/illustration-woman-online-mobile.svg" alt="">
+<div class="header">
+  <h1>
+    FAQ
+  </h1>
+</div>
+<div class="question-container">
+  <p class="question-text">
+    How many team members can I invite?
+  </p>
+  <span class="arrow"><img src="images/icon-arrow-down.svg" alt=""></span>
+  <p class="answer hidden">You can invite up to 2 additional users on the Free plan. There is no limit on 
+    team members for the Premium plan.</p>
+</div>
+<div class="question-container">
+  <p class="question-text">
+    What is the maximum file upload size?
+  </p>
+  <span class="arrow"><img src="images/icon-arrow-down.svg" alt=""></span>
+  <p class="answer hidden">No more than 2GB. All files in your account must fit your allotted storage space.</p>
+</div>
+ <div class="question-container">
+  <p class="question-text">
+    How do I reset my password?
+  </p>
+  <span class="arrow"><img src="images/icon-arrow-down.svg" alt=""></span>
+  <p class="answer hidden">  Click “Forgot password” from the login page or “Change password” from your profile page.
+    A reset link will be emailed to you.</p>
+</div>
+ <div class="question-container">
+  <p class="question-text selected">
+    Can I cancel my subscription?
+  </p>
+  <span class="arrow"><img src="images/icon-arrow-down.svg" alt=""></span>
+  <p class="answer"> Yes! Send us a message and we’ll process your request no questions asked.</p>
+</div>
+ <div class="question-container">
+  <p class="question-text">
+    Do you provide additional support?
+  </p>
+  <span class="arrow"><img src="images/icon-arrow-down.svg" alt=""></span>
+  <p class="answer hidden">Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+</div>
+</div> -->
